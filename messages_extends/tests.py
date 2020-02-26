@@ -129,4 +129,4 @@ class MessagesTests(TestCase):
         messages.add_message(self.client, WARNING_PERSISTENT, "Warning Test")
         self.assertEquals(Messages.objects.count(), 1)
         messages.delete()
-        self.assertEqual(Messages.objects.count(), 0)
+        self.assertEquals(Messages.objects.count(), 0)

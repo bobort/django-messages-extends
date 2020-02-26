@@ -40,7 +40,6 @@ class Message(models.Model):
     def __str__(self):
         return force_text(self.message)
 
-
     def _prepare_message(self):
         """
         Prepares the message for saving by forcing the ``message``
